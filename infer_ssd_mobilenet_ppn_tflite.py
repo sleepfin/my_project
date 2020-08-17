@@ -4,6 +4,7 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
+# 这个index文件可以在训练作业结束后，在模型输出路径中的model目录下找到
 with open('/tmp/cache/tflite/index', 'r') as f:
   index_map = json.loads(f.read())
 class_names = index_map['labels_list']
